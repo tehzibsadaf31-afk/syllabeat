@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SyllaBeat</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Baloo+Da+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reader.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"><span>☁️</span><span>☁️</span><span>⭐</span><span>🎵</span><span>✨</span></div>
+
+<header class="top">
+  <span class="logo" aria-label="SyllaBeat">
+    <span class="mascot" id="mascot" aria-hidden="true">🥁</span>
+    <span class="blk a">Sylla</span><span class="blk b">Beat</span>
+  </span>
+</header>
+
+<main class="page">
+  <h1 class="title" id="title"></h1>
+  <p class="subtitle" id="subtitle" hidden></p>
+  <span class="tag">👆 যেকোনো শব্দে ট্যাপ করো! <span lang="en">Tap any word!</span></span>
+  <article class="story" id="story" aria-label="The text"></article>
+</main>
+
+<div class="dock">
+  <div class="dock-in" role="group" aria-label="Player">
+    <button class="big play" id="play" type="button"><span class="e" aria-hidden="true">▶️</span><b>Play</b><small>চালাও</small></button>
+    <button class="big pause" id="pause" type="button" disabled><span class="e" aria-hidden="true">⏸️</span><b>Pause</b><small>থামাও</small></button>
+    <button class="big slow" id="slower" type="button" aria-pressed="false"><span class="e" aria-hidden="true">🐢</span><b>Slower</b><small>ধীরে</small></button>
+  </div>
+</div>
+
+<dialog id="card" aria-labelledby="c-word">
+  <div class="card">
+    <div class="pic-circle" id="c-pic" aria-hidden="true"></div>
+    <button class="x" id="c-x" type="button" aria-label="Close">×</button>
+    <h2 class="word" id="c-word"></h2>
+    <p class="say" id="c-say"></p>
+    <div class="beats" id="c-beats"></div>
+    <div class="legend" id="c-legend"><i></i> কমলা অংশে জোর দাও</div>
+    <div class="mean"><small>বাংলা অর্থ</small><b id="c-mean"></b></div>
+    <div class="acts">
+      <button class="act l" id="c-listen" type="button">🔊 Listen <small>শোনো</small></button>
+      <button class="act s" id="c-slow" type="button">🐢 Slow <small>ধীরে</small></button>
+    </div>
+  </div>
+</dialog>
+
+<script src="data/syllabeat-data.js"></script>
+<script src="js/reader.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# ---- secrets: NEVER commit these ----
+.env
+*.env
+!.env.example
+
+# ---- your own work stays private by default (texts, audio, finished sites) ----
+projects/
+
+# ---- private design preview (uses audio from another project) ----
+sample/
+
+# ---- python ----
+__pycache__/
+*.pyc

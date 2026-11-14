@@ -1,0 +1,14 @@
+#!/bin/sh
+# Optional guard: stops a git commit that contains something that looks like an API key.
+# Install:  copy this file to  .git/hooks/pre-commit   (on Mac/Linux also run: chmod +x .git/hooks/pre-commit)
+if git rev-parse --verify HEAD >/dev/null 2>&1; then AGAINST=HEAD; else AGAINST=$(git hash-object -t tree /dev/null); fi
+if git diff --cached -U0 "$AGAINST" | grep -E -q 'sk_[0-9a-fA-F]{20,}|xi-api-key[^A-Za-z0-9]*[:=][ "'"'"']*[0-9A-Za-z_-]{16,}'; then
+  echo "COMMIT BLOCKED: something that looks like an API key is in your changes."
+  echo "Remove it (and revoke the key if it was real), then commit again."
+  exit 1
+fi
+if git diff --cached --name-only "$AGAINST" | grep -E -q '(^|/)\.env$'; then
+  echo "COMMIT BLOCKED: a .env file is staged. It must never be committed."
+  exit 1
+fi
+exit 0

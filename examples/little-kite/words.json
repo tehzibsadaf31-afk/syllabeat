@@ -1,0 +1,22 @@
+{
+  "words": {
+    "mina":   { "syl": "MI-na",   "bn": "মি-না",   "meaning": "মীনা (মেয়েটির নাম)", "emoji": "👧" },
+    "has":    { "syl": "has",     "bn": "হ্যাজ",    "meaning": "আছে", "emoji": "🤲" },
+    "a":      { "syl": "a",       "bn": "এ",       "meaning": "একটি", "emoji": "☝️" },
+    "little": { "syl": "LIT-tle", "bn": "লিট-ল",   "meaning": "ছোট্ট", "emoji": "🤏" },
+    "red":    { "syl": "red",     "bn": "রেড",      "meaning": "লাল", "emoji": "🔴" },
+    "kite":   { "syl": "kite",    "bn": "কাইট",     "meaning": "ঘুড়ি", "emoji": "🪁" },
+    "the":    { "syl": "the",     "bn": "দ",        "meaning": "সেই; নির্দিষ্ট কিছু বোঝায়", "emoji": "👉" },
+    "wind":   { "syl": "wind",    "bn": "উইন্ড",    "meaning": "বাতাস", "emoji": "🌬️" },
+    "lifts":  { "syl": "lifts",   "bn": "লিফ্টস",   "meaning": "তোলে; উঁচুতে ওঠায়", "emoji": "⬆️" },
+    "high":   { "syl": "high",    "bn": "হাই",      "meaning": "উঁচুতে", "emoji": "🏔️" },
+    "into":   { "syl": "IN-to",   "bn": "ইন-টু",    "meaning": "ভেতরে", "emoji": "↪️" },
+    "sky":    { "syl": "sky",     "bn": "স্কাই",     "meaning": "আকাশ", "emoji": "🌤️" },
+    "smiles": { "syl": "smiles",  "bn": "স্মাইল্জ",  "meaning": "হাসে", "emoji": "😊" },
+    "and":    { "syl": "and",     "bn": "অ্যান্ড",   "meaning": "এবং", "emoji": "➕" },
+    "runs":   { "syl": "runs",    "bn": "রানজ",     "meaning": "দৌড়ায়", "emoji": "🏃" },
+    "along":  { "syl": "a-LONG",  "bn": "আ-লং",    "meaning": "বরাবর; ধরে", "emoji": "↔️" },
+    "sunny":  { "syl": "SUN-ny",  "bn": "সান-নি",   "meaning": "রোদেলা", "emoji": "☀️" },
+    "path":   { "syl": "path",    "bn": "পাথ",      "meaning": "পথ", "emoji": "🛤️" }
+  }
+}
